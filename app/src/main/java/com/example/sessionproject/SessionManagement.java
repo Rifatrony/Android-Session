@@ -13,10 +13,7 @@ public class SessionManagement {
 
     public SessionManagement (Context context){
         sharedPreferences = context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-
         editor = sharedPreferences.edit();
-
-
     }
 
     public void saveSession(User user){

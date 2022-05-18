@@ -9,24 +9,6 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:id="@+id/passwordTv"
-        android:textSize="22sp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="20dp"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:id="@+id/numberTv"
-        android:textSize="22sp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="20dp"
-        />
-
     <Button
         android:id="@+id/login"
         android:layout_width="150dp"

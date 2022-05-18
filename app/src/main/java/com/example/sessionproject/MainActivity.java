@@ -10,9 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView passwordTv, numberTv;
 
-    String password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,21 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
         this.setTitle("Logout");
 
-        passwordTv = findViewById(R.id.passwordTv);
-
-        password = getIntent().getStringExtra("password");
-
-        passwordTv.setText(password);
-
-
     }
 
     public void logout(View view) {
         SessionManagement sessionManagement = new SessionManagement(MainActivity.this);
         sessionManagement.removeSession();
-
         moveToLogin();
-
     }
 
     private void moveToLogin() {
